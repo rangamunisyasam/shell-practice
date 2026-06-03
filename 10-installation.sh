@@ -16,4 +16,3 @@ exit1
 else
 echo "Installing nginx ... SUCCESS"
 fi
-
