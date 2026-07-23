@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 USERID=$(id -u)
 
@@ -12,7 +12,7 @@ dnf install nginx -y
 
 if [ $? -ne 0 ]; then
 echo "Installing nginx ... FAILURE"
-exit1
+exit 1
 else
 echo "Installing nginx ... SUCCESS"
 fi
@@ -21,7 +21,7 @@ dnf install mysql -y
 
 if [ $? -ne 0 ]; then
     echo "Installing mysql ... FAILURE"
-    exit1
+    exit 1
 else
     echo "Installing mysql ... SUCCESS"
 fi
@@ -30,7 +30,7 @@ dnf install nodejs -y
 
 if [ $? -ne 0 ]; then
     echo "Installing nodejs ... FAILURE"
-    exit1
+    exit 1
 else
     echo "Installing nodejs ... SUCCESS"
 fi
