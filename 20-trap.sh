@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 set -e 
 trap 'echo "There is an error in $LININO, Commond: $BASH_COMMAND" ' ERR

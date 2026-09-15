@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 USERID=$(id -u)
 LOGS-FOLDER="/var/log/shell-script"
